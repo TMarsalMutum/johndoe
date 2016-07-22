@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>promo list</title>
+    <link rel="stylesheet" href="../../style/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li><a href="">Admin</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">menu</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Se déconnecter</a></li>
+    </ul>
+</nav>
+
+<!--FORM DES CODES PROMO-->
+<form class="form text-center container" action="">
+    <h2>Ajoutez vos codes promo !</h2>
+    <div class="row  col-md-3 ">
+        <label for="promo_name">Code</label>
+        <input type="text" class="form-control" id="promo_name" placeholder="MUTUM-VAC">
+    </div>
+    <div class="col-md-3">
+        <div class="input-group">
+            <label for="promo_price">Prix (en mutums)</label>
+            <input type="text" class="form-control" id="promo_price" placeholder="Nombre de mutum">
+        </div>
+    </div>
+    <div class="row col-md-2 col-md-offset-3 container">
+        <label for="promo_date"> Date d'expiration</label>
+        <input type="date" class="form-control" id="promo_date" placeholder="jane.doe@example.com">
+        <button type="button" class=" row btn btn-default">Générer le code Promo</button>
+    </div>
+</form>
+
+<!--LISTING DES PROMOS-->
+<table class="table table-hover col-md-6" id="promo_table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Creation</th>
+        <th>Expiration</th>
+        <th>Valeur</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+</table>
+
+<script src="../app.js"></script>
+<script src="promo-script-try.js"></script>
+
+</body>
+</html>
